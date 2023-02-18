@@ -13,7 +13,7 @@ class MainGui(tkinter.Tk):
         super().__init__()
         self.protocol("WM_DELETE_WINDOW", sys.exit)
         self.eval('tk::PlaceWindow . center')
-        # self.iconbitmap(default="convert.ico")
+        self.iconbitmap(default="convert.ico")
         self.title(".ASC converter")
         self.resizable(False, False)
         path = tkinter.StringVar(
